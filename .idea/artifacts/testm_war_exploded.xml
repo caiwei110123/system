@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="testm:war exploded">
+    <output-path>$PROJECT_DIR$/target/testm</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>testm</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="testm" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.62" />
+          <element id="library" level="project" name="Maven: org.eclipse.jgit:org.eclipse.jgit:5.4.0.201906121030-r" />
+          <element id="library" level="project" name="Maven: com.jcraft:jsch:0.1.55" />
+          <element id="library" level="project" name="Maven: com.jcraft:jzlib:1.1.1" />
+          <element id="library" level="project" name="Maven: com.googlecode.javaewah:JavaEWAH:1.1.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.2" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpg-jdk15on:1.61" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.61" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.61" />
+          <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.2.6" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.22" />
+          <element id="library" level="project" name="Maven: net.sourceforge.jexcelapi:jxl:2.6.12" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.9" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/testm/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="testm/web/Web" />
+    </root>
+  </artifact>
+</component>

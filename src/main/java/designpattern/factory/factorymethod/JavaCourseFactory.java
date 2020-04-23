@@ -1,0 +1,13 @@
+package designpattern.factory.factorymethod;
+
+import designpattern.factory.ICourse;
+import designpattern.factory.JavaCourse;
+
+/**
+ *
+ */
+public class JavaCourseFactory implements ICourseFactory {
+    public ICourse create() {
+        return new JavaCourse();
+    }
+}
