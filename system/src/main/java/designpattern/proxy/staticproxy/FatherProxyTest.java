@@ -1,7 +1,7 @@
 package designpattern.proxy.staticproxy;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class FatherProxyTest {
 

@@ -1,9 +1,9 @@
 package designpattern.proxy.dynamicproxy.jdkproxy;
 
-import com.gupaoedu.vip.pattern.proxy.Person;
+import designpattern.proxy.Person;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class Girl implements Person {
     public void findLove() {

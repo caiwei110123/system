@@ -1,9 +1,9 @@
 package designpattern.proxy.staticproxy;
 
-import com.gupaoedu.vip.pattern.proxy.Person;
+import designpattern.proxy.Person;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class Father implements Person {
     private Son person;

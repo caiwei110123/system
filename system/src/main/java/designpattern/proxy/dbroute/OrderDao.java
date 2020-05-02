@@ -1,7 +1,7 @@
 package designpattern.proxy.dbroute;
 
 /**
- * Created by Tom.
+ *
  */
 public class OrderDao {
     public int insert(Order order){

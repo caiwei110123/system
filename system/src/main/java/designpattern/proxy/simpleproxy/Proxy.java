@@ -1,7 +1,7 @@
 package designpattern.proxy.simpleproxy;
 
 /**
- * Created by Tom.
+ *
  */
 public class Proxy implements Subject {
 

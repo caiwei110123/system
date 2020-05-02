@@ -1,14 +1,14 @@
 package designpattern.proxy.dbroute.proxy;
 
-import com.gupaoedu.vip.pattern.proxy.dbroute.IOrderService;
-import com.gupaoedu.vip.pattern.proxy.dbroute.Order;
-import com.gupaoedu.vip.pattern.proxy.dbroute.db.DynamicDataSourceEntity;
+import designpattern.proxy.dbroute.IOrderService;
+import designpattern.proxy.dbroute.Order;
+import designpattern.proxy.dbroute.db.DynamicDataSourceEntity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class OrderServiceStaticProxy implements IOrderService {
     private SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");

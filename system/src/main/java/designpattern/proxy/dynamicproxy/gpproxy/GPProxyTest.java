@@ -1,14 +1,13 @@
 package designpattern.proxy.dynamicproxy.gpproxy;
 
-import com.gupaoedu.vip.pattern.proxy.Person;
-import com.gupaoedu.vip.pattern.proxy.dynamicproxy.jdkproxy.Girl;
-import com.gupaoedu.vip.pattern.proxy.dynamicproxy.jdkproxy.JDKMeipo;
-import sun.misc.ProxyGenerator;
+
+import designpattern.proxy.Person;
+import designpattern.proxy.dynamicproxy.jdkproxy.Girl;
 
 import java.io.FileOutputStream;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class GPProxyTest {
 

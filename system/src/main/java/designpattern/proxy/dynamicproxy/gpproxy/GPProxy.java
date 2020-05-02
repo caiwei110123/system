@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * 用来生成源代码的工具类
- * Created by Tom.
+ *
  */
 public class GPProxy {
 
@@ -45,7 +45,7 @@ public class GPProxy {
            //4、编译生成的.class文件加载到JVM中来
           Class proxyClass =  classLoader.findClass("$Proxy0");
           Constructor c = proxyClass.getConstructor(GPInvocationHandler.class);
-          f.delete();
+          //f.delete();
 
            //5、返回字节码重组以后的新的代理对象
            return c.newInstance(h);
@@ -57,8 +57,8 @@ public class GPProxy {
 
     private static String generateSrc(Class<?>[] interfaces){
             StringBuffer sb = new StringBuffer();
-            sb.append("package com.gupaoedu.vip.pattern.proxy.dynamicproxy.gpproxy;" + ln);
-            sb.append("import com.gupaoedu.vip.pattern.proxy.Person;" + ln);
+            sb.append("package designpattern.proxy.dynamicproxy.gpproxy;;" + ln);
+            sb.append("import designpattern.proxy.Person;" + ln);
             sb.append("import java.lang.reflect.*;" + ln);
             sb.append("public class $Proxy0 implements " + interfaces[0].getName() + "{" + ln);
                 sb.append("GPInvocationHandler h;" + ln);

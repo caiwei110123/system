@@ -1,7 +1,7 @@
 package designpattern.proxy.simpleproxy;
 
 /**
- * Created by Tom.
+ *
  */
 public class RealSubject implements Subject{
     @Override

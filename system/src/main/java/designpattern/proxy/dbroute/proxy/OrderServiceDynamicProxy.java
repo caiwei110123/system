@@ -1,11 +1,10 @@
 package designpattern.proxy.dbroute.proxy;
 
-import com.gupaoedu.vip.pattern.proxy.dbroute.IOrderService;
-import com.gupaoedu.vip.pattern.proxy.dbroute.Order;
-import com.gupaoedu.vip.pattern.proxy.dbroute.db.DynamicDataSourceEntity;
-import com.gupaoedu.vip.pattern.proxy.dynamicproxy.gpproxy.GPClassLoader;
-import com.gupaoedu.vip.pattern.proxy.dynamicproxy.gpproxy.GPInvocationHandler;
-import com.gupaoedu.vip.pattern.proxy.dynamicproxy.gpproxy.GPProxy;
+
+import designpattern.proxy.dbroute.db.DynamicDataSourceEntity;
+import designpattern.proxy.dynamicproxy.gpproxy.GPClassLoader;
+import designpattern.proxy.dynamicproxy.gpproxy.GPInvocationHandler;
+import designpattern.proxy.dynamicproxy.gpproxy.GPProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -14,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class OrderServiceDynamicProxy implements GPInvocationHandler {
 

@@ -1,13 +1,12 @@
 package designpattern.proxy.dbroute;
 
-import com.gupaoedu.vip.pattern.proxy.dbroute.proxy.OrderServiceDynamicProxy;
-import com.gupaoedu.vip.pattern.proxy.dbroute.proxy.OrderServiceStaticProxy;
+import designpattern.proxy.dbroute.proxy.OrderServiceDynamicProxy;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Tom on 2019/3/10.
+ * .
  */
 public class DbRouteProxyTest {
     public static void main(String[] args) {
