@@ -1,6 +1,7 @@
 package algorithm;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -24,15 +25,45 @@ import java.util.Set;
  * 输出：true
  * 解释：链表中有一个环，其尾部连接到第一个节点。
  *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode-cn.com/problems/linked-list-cycle
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author : yilie
  * @date : 2020/4/30  5:25 下午
  * @Version 1.0
  */
 public class hasCycle {
+    public static void main(String[] args) {
+        for (int i = 0;i<5;) {
+
+            System.out.println(i);
+            i++;
+        }
+
+
+
+
+
+
+        ListNode l1 = new ListNode(3);
+        ListNode l11 = new ListNode(2);
+        l1.next = l11;
+        ListNode l111 = new ListNode(0);
+        l11.next = l111;
+        ListNode l1111 = new ListNode(-4);
+        l111.next = l1111;
+
+        Set<ListNode> set = new HashSet<>();
+
+        Iterator it =  set.iterator();
+        while(it.hasNext()) {
+            ListNode listNode = (ListNode)it.next();
+            //System.out.println(listNode.val+"   "+ (listNode.next.val==null?"xxxx":listNode.next));
+        }
+        //ListNode l11111 = new ListNode(5);
+        //l1111.next = l11111;
+
+        System.out.println(new hasCycle().hasCycle(l1));
+
+    }
     public boolean hasCycle(ListNode head) {
         Set<ListNode> nodesSeen = new HashSet<>();
         while (head != null) {

@@ -21,7 +21,10 @@ package algorithm;
  */
 public class longestPalindrome {
     public static void main(String[] args) {
-        System.out.println(new longestPalindrome().longestPalindrome("cbbd"));
+        System.out.println(9/5);
+        System.out.println(9%5);
+
+        System.out.println(new longestPalindrome().longestPalindrome("babad"));
     }
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
@@ -31,12 +34,13 @@ public class longestPalindrome {
             int len2 = expandAroundCenter(s, i, i + 1);
 
             int len = Math.max(len1, len2);
-            System.out.println("len1="+len1+"   len2="+len2+"   len="+len);
 
             if (len > end - start) {
                 start = i - (len - 1) / 2;
                 end = i + len / 2;
             }
+            System.out.println("i="+i+"   len1="+len1+"   len2="+len2+"   len="+len+"   start"+start+"   end="+end);
+
         }
         return s.substring(start, end + 1);
     }
@@ -44,9 +48,12 @@ public class longestPalindrome {
     private int expandAroundCenter(String s, int left, int right) {
         int L = left, R = right;
         while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            System.out.println(s.charAt(L) +"    "+ s.charAt(R)+"    "+L+"  "+R+"     ");
             L--;
             R++;
         }
+        System.out.println(L+"  "+R);
+
         return R - L - 1;
     }
 

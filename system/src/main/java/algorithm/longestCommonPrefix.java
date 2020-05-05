@@ -25,6 +25,7 @@ package algorithm;
  */
 public class longestCommonPrefix {
     public static void main(String[] args) {
+        System.out.println("abaa".indexOf("b"));
         System.out.println(new longestCommonPrefix().longestCommonPrefix(new String[]{"flower","flow","flight"}));
     }
     public String longestCommonPrefix(String[] strs) {

@@ -19,7 +19,14 @@ public class removeElements {
         l1.next = l11;
         ListNode l111 = new ListNode(3);
         l11.next = l111;
+
+        ListNode l1111 = new ListNode(4);
+        l111.next = l1111;
+
+        ListNode l11111 = new ListNode(5);
+        l1111.next = l11111;
         new removeElements().removeElements(l1,2);
+
     }
     public ListNode removeElements(ListNode head, int val) {
         ListNode sentinel = new ListNode(0);

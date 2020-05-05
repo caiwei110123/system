@@ -48,8 +48,8 @@ public class reverseList {
         ListNode l1111 = new ListNode(4);
         l111.next = l1111;
 
-        ListNode l11111 = new ListNode(5);
-        l1111.next = l11111;
+        //ListNode l11111 = new ListNode(5);
+        //l1111.next = l11111;
 
         System.out.println(new reverseList().reverseList1(l1));
 
