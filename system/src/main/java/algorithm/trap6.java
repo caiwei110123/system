@@ -29,6 +29,7 @@ public class trap6 {
                 }
                  int distance = current - stack.peek() - 1; //两堵墙之前的距离。
                 int min = Math.min(height[stack.peek()], height[current]);
+                System.out.println(distance+"   "+min+"    "+h);
                 sum = sum + distance * (min - h);
             }
             stack.push(current); //当前指向的墙入栈
